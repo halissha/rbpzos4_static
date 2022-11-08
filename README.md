@@ -17,7 +17,7 @@ $result = mysqli_query($GLOBALS["___mysqli_ston"],  $getid );
 [MITRE, CWE-89] - Improper Neutralization of Special Elements used in an SQL Command
 ```
 
-### Пользовательские данные не проходят проверку характеристик или вайтлист перед выполнением запроса
+### Пользовательские данные не проходят проверку или вайтлист перед выполнением запроса
 
 ```
 [MITRE, CWE-20] - Improper Input Validation
