@@ -11,7 +11,7 @@ $result = mysqli_query($GLOBALS["___mysqli_ston"],  $getid );
 ![image](https://github.com/halissha/rbpzos4_static/blob/main/img.png)
 
 ## Основные проблемы:
-### Пользовательские данные подставляются в запрос без плейсхолдера или экранирования
+### Пользовательские данные подставляются в запрос без плейсхолдеров или экранирования
 
 ```
 [MITRE, CWE-89] - Improper Neutralization of Special Elements used in an SQL Command
