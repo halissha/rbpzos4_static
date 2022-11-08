@@ -58,6 +58,6 @@ $result = mysqli_query($GLOBALS["___mysqli_ston"],  $getid );
 
 ## Результат повышения безопасности формы:
 
-![image](https://github.com/halissha/rbpzos4_static/blob/main/img.png)
+![image](https://github.com/halissha/rbpzos4_static/blob/main/image.png)
 
 
