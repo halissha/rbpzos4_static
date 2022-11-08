@@ -39,7 +39,7 @@ $result = mysqli_query($GLOBALS["___mysqli_ston"],  $getid );
 - Обеспечим дополнительную валидацию переменной "id" по типу и длине
 
 ```php
- if (is_numeric($id) && strlen(strval($id)) == 3) {
+ if (is_numeric($id) && strlen((string)$id) == 3) {
     ...
 }
 ```
