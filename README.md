@@ -36,10 +36,10 @@ $result = mysqli_query($GLOBALS["___mysqli_ston"],  $getid );
  $statement->execute();
 ```
 
-- Обеспечим дополнительную валидацию поля "id"
+- Обеспечим дополнительную валидацию поля "id" по типу и длине
 
 ```php
- if (is_numeric($id)) {
+ if (is_numeric($id) && strlen(strval($id)) == 3) {
     ...
 }
 ```
