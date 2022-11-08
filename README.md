@@ -56,6 +56,8 @@ $result = mysqli_query($GLOBALS["___mysqli_ston"],  $getid );
 
 Общий принцип следование стандартам оформления кода позволяет командной разработке быть эффективнее, а коду быть более читаемым
 
+## Результат повышения безопасности формы:
 
+![image](https://github.com/halissha/rbpzos4_static/blob/main/img.png)
 
 
