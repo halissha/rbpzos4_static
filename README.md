@@ -67,11 +67,11 @@ $result = mysqli_query($GLOBALS["___mysqli_ston"],  $getid );
 Аналогично настроим прокси в ручном режиме в браузере:
 ![image](https://github.com/halissha/rbpzos4_static/blob/main/proxy_browser.jpg)
 
-##Перехват запросов с DVWA SQL Injection
+## Перехват запросов с DVWA SQL Injection
 Попробуем перехватить запрос с атакуемой страницы с помощью Interception:
 ![image](https://github.com/halissha/rbpzos4_static/blob/main/intercept.jpg)
 
-##Обнаружение уязвимости с помощью Burp Suite
+## Обнаружение уязвимости с помощью Burp Suite
 Проведем следующую инъекцию и получим всех пользователей, с помощью OR легко проходим валидацию:
 ```php
 1 OR 1=1#
