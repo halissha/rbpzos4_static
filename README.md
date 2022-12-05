@@ -78,6 +78,7 @@ $result = mysqli_query($GLOBALS["___mysqli_ston"],  $getid );
 1+OR+1%3d1%23
 ```
 Получим всех пользователей в ответе:
+
 ![image](https://github.com/halissha/rbpzos4_static/blob/main/users.jpg)
 
 Теперь проведем инъекцию на обнаружение имен таблиц:
