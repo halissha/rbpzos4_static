@@ -60,4 +60,8 @@ $result = mysqli_query($GLOBALS["___mysqli_ston"],  $getid );
 
 ![image](https://github.com/halissha/rbpzos4_static/blob/main/image.png)
 
+## Использование Burp Suite для нахождения уязвимости
+Настроим прокси в Burp Suite для возможности перехвата запросов:
+
+
 
