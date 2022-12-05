@@ -97,7 +97,14 @@ $result = mysqli_query($GLOBALS["___mysqli_ston"],  $getid );
 В отвече получим логины и пароли пользователей системы:
 ![image](https://github.com/halissha/rbpzos4_static/blob/main/logins_passwords.jpg)
 
-
+##Обнаружение уязвимости с помощью SQLMap
+Воспользуемся утилитой SQLMap для выявления уязвимых параметров запроса
+Утилита выявила уязвимости с типами:
+```php
+boolean-based blind
+time-based blind
+```
+![image](https://github.com/halissha/rbpzos4_static/blob/main/logins_passwords.jpg)
 
 
 
