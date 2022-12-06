@@ -36,7 +36,7 @@ $result = mysqli_query($GLOBALS["___mysqli_ston"],  $getid );
  $statement->execute();
 ```
 
-- Обеспечим дополнительную валидацию переменной "id" по типу и длине
+- Обеспечим дополнительную валидацию переменной "id" по длине
 
 ```php
  if (strlen((string)$id) == 3) {
