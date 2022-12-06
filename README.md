@@ -67,7 +67,7 @@ $result = mysqli_query($GLOBALS["___mysqli_ston"],  $getid );
 Аналогично настроим прокси в ручном режиме в браузере:
 ![image](https://github.com/halissha/rbpzos4_static/blob/main/proxy_browser.jpg)
 
-## Перехват запросов с DVWA SQL Injection
+## Перехват запросов из DVWA SQL Injection
 Попробуем перехватить запрос с атакуемой страницы с помощью Interception:
 ![image](https://github.com/halissha/rbpzos4_static/blob/main/intercept.jpg)
 
